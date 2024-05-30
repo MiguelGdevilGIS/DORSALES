@@ -34,7 +34,7 @@
 
         var openStreetMap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '© Infratel S.A.C | Anthony G | Miguel GC'
+            attribution: '© Infratel S.A.C | Anthony G | Miguel G'
         });
 
         var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
@@ -91,7 +91,7 @@
             style: styleDashede, // Aplica el estilo de línea punteada
             onEachFeature: function (feature, layer) {
                 // Muestra el nombre del distrito como etiqueta
-                layer.bindTooltip('Distrito de ' + feature.properties.name_3, { permanent: true, direction: 'auto' }).openTooltip();
+                layer.bindTooltip('Distrito de ' + feature.properties.NAME_3, { permanent: true, direction: 'auto' }).openTooltip();
             },
             interactive: false
         });
@@ -122,7 +122,7 @@
             color: 'magenta',
             opacity: 1.0,
             fillOpacity: 0.2,
-            weight: 3
+            weight: 4
         };
 
         // TRAMOS
@@ -148,6 +148,6 @@
         }).addTo(map);
 
     </script>
-</body>
+    </body>
 
 </html>
